@@ -75,8 +75,6 @@ dictionary3 = {1:['Tony', 41] , 2:['Steve', 39], 3:['Nat', 35]}
 dictionary4 = {4:['Bruce', 41], 5:['Clint', 35], 6:['Thor', 38]}
 merged_dictionary1 = dictionary3.copy()
 merged_dictionary1.update(dictionary4)
-#print(merged_dictionary)
-#print(tabulate(merged_dictionary, headers=["Name", "Age"]))
 print("{:<10} {:<10}".format('NAME', 'AGE'))
 for key, value in merged_dictionary1.items():
     name, age = value
@@ -86,6 +84,8 @@ dictionary1 = {'Tony': 41, 'Steve': 39, 'Nat': 35}
 dictionary2 = {'Bruce': 41, 'Clint': 35, 'Thor': 38}
 merged_dictionary = dictionary1.copy()
 merged_dictionary.update(dictionary2)
+#print(merged_dictionary)
+#print(tabulate(merged_dictionary, headers=["Name", "Age"]))
 
 del merged_dictionary['Nat']
 print(merged_dictionary)
